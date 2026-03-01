@@ -35,7 +35,10 @@ export function Header() {
               href={item.href}
               className={cn(
                 "transition-colors hover:text-blue-600",
-                isActive ? "text-blue-600 font-medium" : "text-gray-500"
+                {
+                  "text-blue-600 font-medium": isActive,
+                  "text-gray-500": !isActive
+                }
               )}
             >
               {item.label}
