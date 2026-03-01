@@ -4,16 +4,18 @@ const repo = "token-counter-chat-application";
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
-  output: "export", // static export
-  trailingSlash: true, // pages-də routing problemsiz
+  output: "export", // Enable static export for GitHub Pages deployment
+  trailingSlash: true, // Ensures consistent routing on static hosts (prevents refresh 404s)
+
   ...(isProd
     ? {
-        basePath: `/${repo}`, // subpath üçün
-        assetPrefix: `/${repo}/`, // static asset path fix
+        basePath: `/${repo}`, // Required for subpath hosting (GitHub Pages repo-based URLs)
+        assetPrefix: `/${repo}/`, // Fix static asset paths when served from a subdirectory
       }
     : {}),
+
   images: {
-    unoptimized: true, // next/image GitHub Pages-də problem olmasın
+    unoptimized: true, // Disable Next.js image optimization (not supported on static hosts like GitHub Pages)
   },
 };
 
