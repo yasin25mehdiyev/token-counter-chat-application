@@ -15,7 +15,7 @@ export default function StatisticsPage() {
   if(showLoader) return <Loader />
 
   return (
-    <div className={cn("space-y-6")}>
+    <div className={cn("space-y-6 mt-8")}>
       <StatisticsCards used={used} remaining={remaining} globalLimit={GLOBAL_LIMIT} />
       <UsageBar used={used} globalLimit={GLOBAL_LIMIT} />
     </div>

@@ -27,7 +27,7 @@ export default function ChatPage() {
   if(showLoader) return <Loader />
 
   return (
-    <div className={cn("space-y-6")}>
+    <div className={cn("space-y-6 mt-8")}>
       <ChatComposer
         value={input}
         onChange={setInput}
