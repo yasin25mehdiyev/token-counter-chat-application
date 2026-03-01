@@ -18,7 +18,7 @@ Built with a focus on clean architecture, reusable UI primitives, and smooth UX.
 
 ## 🚀 Live Demo
 
-> Add deployment link here after deployment to github.io
+🌐 https://yasin25mehdiyev.github.io/token-counter-chat-application
 
 ---
 
