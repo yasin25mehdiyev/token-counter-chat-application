@@ -22,7 +22,7 @@ export default function RootLayout({
         <TooltipProvider delayDuration={200}>
           <div className={cn("max-w-3xl mx-auto", "px-6 py-10")}>
             <Header />
-            <main className={cn("mt-8")}>{children}</main>
+            <main>{children}</main>
           </div>
         </TooltipProvider>
       </body>

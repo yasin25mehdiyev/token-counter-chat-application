@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 
 export default function HomePage() {
   return (
-    <Card className={cn("border shadow-sm", "transition-transform duration-200 cursor-pointer", "hover:scale-[1.01]")}>
+    <Card className={cn("border shadow-sm mt-8", "transition-transform duration-200 cursor-pointer", "hover:scale-[1.01]")}>
       <CardHeader className={cn("space-y-2")}>
         <CardTitle className={cn("text-2xl")}>Token Counter Chat</CardTitle>
         <p className={cn("text-sm text-gray-500")}>
